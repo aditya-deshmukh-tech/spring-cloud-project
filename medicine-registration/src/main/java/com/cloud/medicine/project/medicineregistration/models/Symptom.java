@@ -1,19 +1,11 @@
 package com.cloud.medicine.project.medicineregistration.models;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
-import javax.persistence.*;
 import java.util.List;
 
-@Entity
 public class Symptom {
 
-    @Id
-    @Column(name = "symptom_name")
     private String name;
 
-    @ManyToMany(fetch = FetchType.LAZY, mappedBy = "symptoms")
-    @JsonIgnore
     private List<Medicine> medicines;
 
     public String getName() {
