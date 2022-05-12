@@ -57,5 +57,4 @@ public class MedicineManagementController {
             return ResponseEntity.ok("deleted successfully");
         }
 
-
 }
